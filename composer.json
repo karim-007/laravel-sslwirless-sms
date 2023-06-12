@@ -1,0 +1,38 @@
+{
+    "name": "karim007/laravel-sslwirless-sms",
+    "description": "SSLWirless sms package for laravel",
+    "type": "library",
+    "keywords": [
+        "sslwirless sms",
+        "sslwirless sms laravel",
+        "sslwirless sms for laravel",
+        "sslwirless bulk sms"
+    ],
+    "require": {
+        "php": "^7.4|^8.0|^8.1|^8.2",
+        "illuminate/support": "^6|^7|^8|^9|^10"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Karim007\\LaravelSslwirlessSms\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Md abdul karim",
+            "email": "karim.cse007@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Karim007\\LaravelSslwirlessSms\\SSLWirlessSmsServiceProvider"
+            ],
+            "aliases": {
+                "LaravelBkashTokenize": "Karim007\\LaravelSslwirlessSms\\LaravelSslwirlessSms"
+            }
+        }
+    }
+}
