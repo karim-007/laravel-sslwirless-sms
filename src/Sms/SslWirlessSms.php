@@ -21,7 +21,7 @@ class SslWirlessSms extends BaseApi
         $url = trim($this->baseUrl, '/')."/api/v3/send-sms";
         $params = json_encode($params);
 
-        echo $this->callApi($url, $params);
+        return $this->callApi($url, $params);
     }
 
     /**
@@ -41,7 +41,7 @@ class SslWirlessSms extends BaseApi
         $url = trim($this->domain, '/')."/api/v3/send-sms/bulk";
         $params = json_encode($params);
 
-        echo $this->callApi($url, $params);
+        return $this->callApi($url, $params);
     }
 
     /**
